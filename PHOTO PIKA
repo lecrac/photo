@@ -1,0 +1,11 @@
+from PIL import Image
+
+imgl=Image.open("surprised_pika.bmp")
+
+for x in range (299):
+    for y in range(199):
+        p=imgl.getpixel((x,y))
+        if p==(0,255,0):
+            imgl.putpixel((x,y),(0,0,255))
+
+imgl
